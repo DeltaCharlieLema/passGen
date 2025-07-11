@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container open-sans">
+        <main>
+            <div class="hero-text">
+                <h1>Generate a <br><strong>random password</strong></h1>
+                <p>Never use an insecure password again.</p>
+            </div>
+
+            <button id="generate" onclick="genTime()">Generate passwords</button>
+            <div class="container-range">
+                <label for="length">Password Length:</label>
+                <output id="length-value"></output>
+                <input type="range" id="length" min="8" max="30" value="8"/>
+            </div>
+            <hr>
+            <div class="container-results">
+                <p id="gen1" class="result"></p>
+                <p id="gen2" class="result"></p>
+            </div>
+        </main>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
