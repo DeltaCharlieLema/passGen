@@ -132,3 +132,62 @@ main{
     left: 70%;
 
 }
+
+@media (max-device-width: 768px) {
+    body{
+        height: 100vh;
+    }
+    #generate{
+        height: 6vh;
+        font-size: 50px;
+        width: 100%;
+        border-radius: 12px;
+    }
+    .container{
+        line-height: 400%;
+        justify-content: start;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        padding: 5vh 0;
+        height: 100%;
+    }
+    .main{
+        width: 10vh;
+        padding: 0;
+    }
+    .hero-text{
+
+        font-size: 30px;
+    }
+    .container-range{
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 40px;
+        width: 70vw;
+        text-align: center;
+
+        output{
+            width: 40px;
+        }
+        *{
+            margin: 10px 0;
+        }
+        input[type="checkbox"]{
+            width: 40px;
+            height: 40px;
+            margin-top: 25px;
+        }
+        input[type="range"]{
+            width: 70vw;
+            height: 40px;
+        }
+
+    }
+    .container-results{
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 40px;
+        height: 40px;
+    }
+}
