@@ -62,11 +62,12 @@ h1 > strong{
     align-items: center;
     background-color: var(--result-background-color);
     color: var(--font-color);
-    padding: 10px;
     width: 48%;
     /*height: 40px;*/
     margin: 10px 0;
     border-radius: 5px;
+    text-wrap: wrap;
+    padding: 2rem 3rem;
 }
 .result:hover{
     background: var(--secondary-color);
@@ -189,9 +190,5 @@ main{
         flex-wrap: wrap;
         font-size: 40px;
         height: 40px;
-    }
-    .result{
-       text-wrap: wrap;
-        padding: 2rem 3rem;
     }
 }
