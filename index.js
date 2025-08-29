@@ -41,7 +41,7 @@ function genTime(){
 }
 
 function copyToClipboard(el) {
-    let copyText = document.getElementById(el).textContent;
+    let copyText = document.querySelector(el).textContent;
     navigator.clipboard.writeText(copyText).then(() => {
         // Alert the user that the action took place.
         // Nobody likes hidden stuff being done under the hood!

@@ -190,4 +190,8 @@ main{
         font-size: 40px;
         height: 40px;
     }
+    .result{
+       text-wrap: wrap;
+        padding: 2rem 3rem;
+    }
 }
