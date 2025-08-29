@@ -52,8 +52,9 @@ h1 > strong{
 .container-results{
     display: flex;
     /*flex-direction: row;*/
-    justify-content: space-between;
-    /*align-items: start;*/
+    justify-content: center;
+    gap: 10%;
+    align-items: start;
 }
 .result{
     display: flex;
@@ -62,13 +63,19 @@ h1 > strong{
     align-items: center;
     background-color: var(--result-background-color);
     color: var(--font-color);
-    width: 48%;
+    width: 40%;
     /*height: 40px;*/
-    margin: 10px 0;
+    margin: 10% 0;
     border-radius: 5px;
-    text-wrap: wrap;
-    padding: 2rem 3rem;
-    text-wrap-style: balance;
+    /*text-wrap: wrap;*/
+    padding: 2rem 6rem;
+    /*overflow-wrap: break-word;*/
+    text-overflow: ellipsis;
+    /*word-wrap: break-word;*/
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 2rem;
 }
 .result:hover{
     background: var(--secondary-color);
@@ -186,10 +193,10 @@ main{
         }
 
     }
-    .container-results{
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: 40px;
-        height: 40px;
-    }
+    /*.container-results{*/
+    /*    flex-direction: column;*/
+    /*    flex-wrap: wrap;*/
+    /*    font-size: 40px;*/
+    /*    height: 40px;*/
+    /*}*/
 }
